@@ -13,15 +13,35 @@ if (eta < 18) {
     const prova = document.getElementById("costobiglietto");
 
     prova.innerHTML = prezzominorenne.toFixed(2) ;
-} else {
-    const prezzomaggiorenne = parseFloat(prezzoperdistanza - (prezzoperdistanza * 40 / 100));
-    
-    console.log( "prezzo maggiorenne" , prezzomaggiorenne );
+} else if(eta < 65) {
+        const prova = document.getElementById("costobiglietto");
 
-    const prova = document.getElementById("costobiglietto");
+        prova.innerHTML = prezzoperdistanza.toFixed(2) ;
+        } else {
+            const prezzomaggiore60 = parseFloat(prezzoperdistanza - (prezzoperdistanza * 40 / 100));
+            
+            console.log( "prezzo per chi ha 65 anni o più" , prezzomaggiore60 );
+        
+            const prova = document.getElementById("costobiglietto");
+        
+            prova.innerHTML = prezzomaggiore60.toFixed(2)  ;
+        }
 
-    prova.innerHTML = prezzomaggiorenne.toFixed(2)  ;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
