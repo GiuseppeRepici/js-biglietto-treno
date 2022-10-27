@@ -14,9 +14,9 @@ if (eta < 18) {
 
     prova.innerHTML = prezzominorenne.toFixed(2) ;
 } else if(eta < 65) {
-        const prova = document.getElementById("costobiglietto");
+            const prova = document.getElementById("costobiglietto");
 
-        prova.innerHTML = prezzoperdistanza.toFixed(2) ;
+            prova.innerHTML = prezzoperdistanza.toFixed(2) ;
         } else {
             const prezzomaggiore60 = parseFloat(prezzoperdistanza - (prezzoperdistanza * 40 / 100));
             
